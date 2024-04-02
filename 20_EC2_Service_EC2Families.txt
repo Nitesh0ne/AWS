@@ -1,0 +1,118 @@
+EC2 = Elastic Compute Cloud 
+
+Resizable = sclae in and scale out  => Elasticity
+	    Scale up and scale down => Scalability
+
+
+
+EC2 state = launch 
+	    Running 
+	    Stop 
+            start 
+            Reboot 
+            Terminate = delete
+
+EC2 is Regional 
+pricing = Pay as you go model on hour basis
+
+free 750 hours in month on first year 
+
+
+On-Demand Instansces
+ -> Fixed price 
+ -> pay for what you have used
+ -> pay per hour 
+ -> No commitment
+ -> No upfront payement
+ -> No Predictable Usage
+
+
+Reserved Instances
+
+--> long term commitment == 1 to 3 years
+--> upfront payement == full or partial payement
+--> discount = (70-75)% discount
+--> standart Reserved  = 75 % discount 
+--> Convertiel Reserved = 
+--> schedule Reserved = Reserved for a short time (fraction of day, week or month)
+
+
+SPOT INSTANCES = 
+Dedicated host =
+
+
+
+
+
+
+
+EC2 Families/ Instance Type :
+
+General Instances = For General purpose
+Memory Instances  = If you need more memory for you application 
+CPU Instances  = More CPU's
+
+storage Instances = More storage 
+
+GPU Instances = For heavy machines, Graphics,
+
+
+
+Scalability can achieved by changing the instance type 
+eg. t2.micro to t2.medium
+
+if you change the instance type there is no data loss 
+as data is stored in EBS volume 
+
+
+Burstable Performance Instance = Billable
+
+Ec2 instance will enter into the burstable mode and it give high 
+performances for limited period of time only 
+
+
+t2 and t3 types support bursstable instances
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
