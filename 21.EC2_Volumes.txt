@@ -1,0 +1,67 @@
+VOLUMES 
+
+TWO TYPES :
+  1. EBS VOLUMES  = persistant storage , max size 16TB ,Billable
+	Types of EBS Volumes :
+	 	General purpose= gpt2 and gp3, SDD , gpt2 default EBS volume
+		provisioned IOPS = io1, io2 (high performance) ,SDD ,graphic
+		throughput = st1 =HDD , frequently access data with cheaper price
+		cold(sc1) = HDD = frequently access data with cheaper price
+		Magnetic(standard) = previous generation ,
+
+io1 and io2 can be attached to multiple ec2 instance at the same time in same AZ
+ 
+IOPS = inout output per second 
+
+2. INSTANCE STORE VOLUMES = temporary storage,  i,e if you stop and start the EC2 instance, Data is lost and deleted
+		Emphemeral storage 
+
+		Based on the instance type that yu have selected, instance store volumes will be attached automatically 
+
+* on Reboot = Data of instance store will not  LOSS
+
+2 Types of status check 
+* Instance Status check =  Hardware check  
+* System  Status check  =  software check
+2/2 check are passed = only then we can login 
+
+Status check aare done by AWS.
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+ 
