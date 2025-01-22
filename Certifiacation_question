@@ -8,7 +8,7 @@ EXPECTATION FROM THIS COURSE = TO BE AWS SAA (SOLUTION ARCHITECT ASSOCIATE)
 TO GAIN THEROTICAL AND PRACTICAL KNOWLEDEGE ABOUT ALL ARCHITECTURE OF AWS (TO CLEAR AWS INTERVIEW :) )
 
 PRE-REQUISITE = ANYBODY WHO WANT TO LEARN(NON-IT BACKGROUND )
-==========================================================================
+===========================================================================
 1ST SESSION AWS – INTRODUCTION
 	 INTRODUCTION CLASSES ONLY 
 
@@ -21,16 +21,34 @@ PRE-REQUISITE = ANYBODY WHO WANT TO LEARN(NON-IT BACKGROUND )
 ===========================================================================
 4TH SESSION AWS - DATA CENTER
 
-
 ===========================================================================
 5TH SESSION AWS - DATA CENTER INFRASTRUCTURE
+
+===========================================================================
+6TH SESSION AWS - MANAGEMENT CONSOLE & GROUP OF SERVICE
+
+===========================================================================
+7TH SESSION AWS - 3T'S ELASTICITY SCALABILITY HIGH AVAILABILITY
+
+===========================================================================
+8TH SESSION AWS - REGIONS AND AVAILABILITY ZONES
+
+===========================================================================
+9TH SESSION AWS - SERVICES EC2, ELASTIC BEANSTALK, LIGHT SAIL, LAMBDA
+
+===========================================================================
+10TH SESSION AWS - STORAGE S3, EBS
+
+
 ===========================================================================
 24th Session AWS - EC2 Security Groups, NACL
 
+
+===========================================================================
 By default inbound rule are deny and outbound rule are allowed(C.Q)
 If you allow any protocol in inbound rule, you no need to allow that on outbound rule = stateful packet inspection(C.Q)
 If you allow any protocol in inbound rule, you also need to allow that on outbound rule = stateless packet inspection(C.Q)
-
+===========================================================================
 security Group = stateful 
 Nacl(network access control list) = stateless
 
