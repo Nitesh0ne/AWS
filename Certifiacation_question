@@ -38,6 +38,519 @@ PRE-REQUISITE = ANYBODY WHO WANT TO LEARN(NON-IT BACKGROUND )
 
 ===========================================================================
 10TH SESSION AWS - STORAGE S3, EBS
+===========================================================================
+11TH SESSION AWS - EFS, DATA SERVICES
+===========================================================================
+12 SESSION AWS - VPC, ROUTE53, CLOUD FRONT
+===========================================================================
+13TH SESSION AWS - IAM, CLOUD WATCH, CLOUD TRAIL
+
+
+===========================================================================
+24th Session AWS - EC2 Security Groups, NACL
+
+
+===========================================================================
+By default inbound rule are deny and outbound rule are allowed(C.Q)
+If you allow any protocol in inbound rule, you no need to allow that on outbound rule = stateful packet inspection(C.Q)
+If you allow any protocol in inbound rule, you also need to allow that on outbound rule = stateless packet inspection(C.Q)
+===========================================================================
+security Group = stateful 
+Nacl(network access control list) = stateless
+
+security Group is Ec2 instance level
+NACL is subnet(availability zone) level 
+
+------------------------------------------------------------------------------------------------------------------
+25th Session AWS - EC2 Instance Auto-Scaling, Elastic Load Balancer
+
+Network Load Balancer is only Load balancer that provide static IP (C.Q)
+
+------------------------------------------------------------------------------------------------------------------
+26th Session AWS - Types of IP's, GA (Global Accelerator)
+
+http://169.254.169.254/latest/meta-data/ (C.Q)
+
+User-data run only for the first time  when launching ec2 instance(C.Q)
+
+if both eth0 eth1 of ec2 instance used private IP 
+
+------------------------------------------------------------------------------------------------------------------
+28th Session - AWS EC2 Practical's, AWS Console
+
+What is Application SERVER(I.Q) ?
+SERVER Where application is Installed
+
+
+
+------------------------------------------------------------------------------------------------------------------
+29th Session AWS - EC2 Practical's 2 = EC2 Instance Console
+
+Nitro Enclave (TEE Trusted Executable Environment) = 
+
+----------------------------------------------------------------------------------------------------------------
+30th Session AWS - EC2 Practical's 3 = EC2 Instance Console
+
+User Data = To edit user data first stop the ec2 instance and edit user data.
+
+
+You can attach detach IAM Role to the EC2 instance while running.
+
+
+aws is Using XEN Virtualization at the backend.
+
+
+while creating a image we can change root volume properties except size(C.Q)
+while creating a image we can also add additional volume 
+
+if your ec2 instance root volume is not encrypted , while creating image root volume is also not encrypted and vice versa
+
+while creating a image additional volume can be encrypted.
+Deregister AMI = Deleting the AMI 
+COPY AMI provide two things = copying to ami another region, and encrypt the 
+----------------------------------------------------------------------------------------------------------------------------------
+32nd Session AWS - EC2 Instance Load Balancer
+
+ken Thompson =
+ACM = amazon certificate manager
+
+-----------------------------------------------------------------------------------------------------------------------------------
+33rd Session AWS - EC2 Practical 5 Load Balancer
+#!/bin/bash
+
+yum install httpd unzip -y 
+service httpd start
+chkconfig httpd on 
+mkdir /var/www/html
+sudo wget https://www.tooplate.com/zip-templates/2137_barista_cafe.zip 
+sudo unzip 2127*
+sudo mv 2137*/* /var/www/html
+
+
+
+WAF is used to secure the application , WAF stop DDOS
+
+
+==>How to generate SSL Certificate
+	Got to ACM --> Request Certificate --> Select Request a public Certificate --> Next --> Provide Domain Name : Ex:*.boom.com --> click on the 		certificate and create record in R53. (Make sure you purchase the domain first and then create record)
+
+
+-----------------------------------------------------------------------------------------------
+34th Session AWS - EC2 Practical's 6 = Auto Scaling
+
+If you want to have big application like java tomcat on ec2 instances(ASG)
+create a EC2 instance first, Deploy the application and create AMI
+
+it is not possible to edit launch template .
+you can create new version of launch template
+
+draining =  giving response to remaining request == removing the ec2 instance from target group = it Wii complete the in-flight request and removed
+
+-------------------------------------------------------------------------------------
+35th Session AWS - CloudWatch Alarms Events & Logs
+
+Cannery = 
+-------------------------------------------------------------------------------------
+36th Session AWS - CloudWatch Practical's Alarms Events & Lambda AWS Console
+--------------------------------------------------------------------------------------
+47th Session AWS - RDS, RDS Proxy
+
+How many Read Replica can you make in AWS ?
+
+----------------------------------------------------------------------------------------
+52nd Session AWS - Route53 Introduction Tutorial
+
+Route53 is Global Service.
+NS and SOA are automatically created in AWS
+
+
+
+
+
+TARGET = THIS COURSE IS WILL BE COMPLETED  BY Feb-15 2025
+SOME THINGS TO CONSIDERED WHEN LEARNING FROM REYAZ SHAIK
+
+CC   = Crystal Clear
+KISS = KEEP IT SIMPLE 
+
+EXPECTATION FROM THIS COURSE = TO BE AWS SAA (SOLUTION ARCHITECT ASSOCIATE)
+TO GAIN THEROTICAL AND PRACTICAL KNOWLEDEGE ABOUT ALL ARCHITECTURE OF AWS (TO CLEAR AWS INTERVIEW :) )
+
+PRE-REQUISITE = ANYBODY WHO WANT TO LEARN(NON-IT BACKGROUND )
+===========================================================================
+1ST SESSION AWS – INTRODUCTION
+	 INTRODUCTION CLASSES ONLY 
+
+===========================================================================
+2ND SESSION AWS - CLIENT SERVER ARCHITECTURE
+
+===========================================================================
+3RD SESSION AWS - OVERVIEW
+
+===========================================================================
+4TH SESSION AWS - DATA CENTER
+
+===========================================================================
+5TH SESSION AWS - DATA CENTER INFRASTRUCTURE
+
+===========================================================================
+6TH SESSION AWS - MANAGEMENT CONSOLE & GROUP OF SERVICE
+
+===========================================================================
+7TH SESSION AWS - 3T'S ELASTICITY SCALABILITY HIGH AVAILABILITY
+
+===========================================================================
+8TH SESSION AWS - REGIONS AND AVAILABILITY ZONES
+
+===========================================================================
+9TH SESSION AWS - SERVICES EC2, ELASTIC BEANSTALK, LIGHT SAIL, LAMBDA
+
+===========================================================================
+10TH SESSION AWS - STORAGE S3, EBS
+===========================================================================
+11TH SESSION AWS - EFS, DATA SERVICES
+===========================================================================
+12 SESSION AWS - VPC, ROUTE53, CLOUD FRONT
+===========================================================================
+13TH SESSION AWS - IAM, CLOUD WATCH, CLOUD TRAIL
+
+
+===========================================================================
+24th Session AWS - EC2 Security Groups, NACL
+
+
+===========================================================================
+By default inbound rule are deny and outbound rule are allowed(C.Q)
+If you allow any protocol in inbound rule, you no need to allow that on outbound rule = stateful packet inspection(C.Q)
+If you allow any protocol in inbound rule, you also need to allow that on outbound rule = stateless packet inspection(C.Q)
+===========================================================================
+security Group = stateful 
+Nacl(network access control list) = stateless
+
+security Group is Ec2 instance level
+NACL is subnet(availability zone) level 
+
+------------------------------------------------------------------------------------------------------------------
+25th Session AWS - EC2 Instance Auto-Scaling, Elastic Load Balancer
+
+Network Load Balancer is only Load balancer that provide static IP (C.Q)
+
+------------------------------------------------------------------------------------------------------------------
+26th Session AWS - Types of IP's, GA (Global Accelerator)
+
+http://169.254.169.254/latest/meta-data/ (C.Q)
+
+User-data run only for the first time  when launching ec2 instance(C.Q)
+
+if both eth0 eth1 of ec2 instance used private IP 
+
+------------------------------------------------------------------------------------------------------------------
+28th Session - AWS EC2 Practical's, AWS Console
+
+What is Application SERVER(I.Q) ?
+SERVER Where application is Installed
+
+
+
+------------------------------------------------------------------------------------------------------------------
+29th Session AWS - EC2 Practical's 2 = EC2 Instance Console
+
+Nitro Enclave (TEE Trusted Executable Environment) = 
+
+----------------------------------------------------------------------------------------------------------------
+30th Session AWS - EC2 Practical's 3 = EC2 Instance Console
+
+User Data = To edit user data first stop the ec2 instance and edit user data.
+
+
+You can attach detach IAM Role to the EC2 instance while running.
+
+
+aws is Using XEN Virtualization at the backend.
+
+
+while creating a image we can change root volume properties except size(C.Q)
+while creating a image we can also add additional volume 
+
+if your ec2 instance root volume is not encrypted , while creating image root volume is also not encrypted and vice versa
+
+while creating a image additional volume can be encrypted.
+Deregister AMI = Deleting the AMI 
+COPY AMI provide two things = copying to ami another region, and encrypt the 
+----------------------------------------------------------------------------------------------------------------------------------
+32nd Session AWS - EC2 Instance Load Balancer
+
+ken Thompson =
+ACM = amazon certificate manager
+
+-----------------------------------------------------------------------------------------------------------------------------------
+33rd Session AWS - EC2 Practical 5 Load Balancer
+#!/bin/bash
+
+yum install httpd unzip -y 
+service httpd start
+chkconfig httpd on 
+mkdir /var/www/html
+sudo wget https://www.tooplate.com/zip-templates/2137_barista_cafe.zip 
+sudo unzip 2127*
+sudo mv 2137*/* /var/www/html
+
+
+
+WAF is used to secure the application , WAF stop DDOS
+
+
+==>How to generate SSL Certificate
+	Got to ACM --> Request Certificate --> Select Request a public Certificate --> Next --> Provide Domain Name : Ex:*.boom.com --> click on the 		certificate and create record in R53. (Make sure you purchase the domain first and then create record)
+
+
+-----------------------------------------------------------------------------------------------
+34th Session AWS - EC2 Practical's 6 = Auto Scaling
+
+If you want to have big application like java tomcat on ec2 instances(ASG)
+create a EC2 instance first, Deploy the application and create AMI
+
+it is not possible to edit launch template .
+you can create new version of launch template
+
+draining =  giving response to remaining request == removing the ec2 instance from target group = it Wii complete the in-flight request and removed
+
+-------------------------------------------------------------------------------------
+35th Session AWS - CloudWatch Alarms Events & Logs
+
+Cannery = 
+-------------------------------------------------------------------------------------
+36th Session AWS - CloudWatch Practical's Alarms Events & Lambda AWS Console
+--------------------------------------------------------------------------------------
+47th Session AWS - RDS, RDS Proxy
+
+How many Read Replica can you make in AWS ?
+
+----------------------------------------------------------------------------------------
+52nd Session AWS - Route53 Introduction Tutorial
+
+Route53 is Global Service.
+NS and SOA are automatically created in AWS
+
+
+
+
+
+TARGET = THIS COURSE IS WILL BE COMPLETED  BY Feb-15 2025
+SOME THINGS TO CONSIDERED WHEN LEARNING FROM REYAZ SHAIK
+
+CC   = Crystal Clear
+KISS = KEEP IT SIMPLE 
+
+EXPECTATION FROM THIS COURSE = TO BE AWS SAA (SOLUTION ARCHITECT ASSOCIATE)
+TO GAIN THEROTICAL AND PRACTICAL KNOWLEDEGE ABOUT ALL ARCHITECTURE OF AWS (TO CLEAR AWS INTERVIEW :) )
+
+PRE-REQUISITE = ANYBODY WHO WANT TO LEARN(NON-IT BACKGROUND )
+===========================================================================
+1ST SESSION AWS – INTRODUCTION
+	 INTRODUCTION CLASSES ONLY 
+
+===========================================================================
+2ND SESSION AWS - CLIENT SERVER ARCHITECTURE
+
+===========================================================================
+3RD SESSION AWS - OVERVIEW
+
+===========================================================================
+4TH SESSION AWS - DATA CENTER
+
+===========================================================================
+5TH SESSION AWS - DATA CENTER INFRASTRUCTURE
+
+===========================================================================
+6TH SESSION AWS - MANAGEMENT CONSOLE & GROUP OF SERVICE
+
+===========================================================================
+7TH SESSION AWS - 3T'S ELASTICITY SCALABILITY HIGH AVAILABILITY
+
+===========================================================================
+8TH SESSION AWS - REGIONS AND AVAILABILITY ZONES
+
+===========================================================================
+9TH SESSION AWS - SERVICES EC2, ELASTIC BEANSTALK, LIGHT SAIL, LAMBDA
+
+===========================================================================
+10TH SESSION AWS - STORAGE S3, EBS
+===========================================================================
+11TH SESSION AWS - EFS, DATA SERVICES
+===========================================================================
+12 SESSION AWS - VPC, ROUTE53, CLOUD FRONT
+===========================================================================
+13TH SESSION AWS - IAM, CLOUD WATCH, CLOUD TRAIL
+
+
+===========================================================================
+24th Session AWS - EC2 Security Groups, NACL
+
+
+===========================================================================
+By default inbound rule are deny and outbound rule are allowed(C.Q)
+If you allow any protocol in inbound rule, you no need to allow that on outbound rule = stateful packet inspection(C.Q)
+If you allow any protocol in inbound rule, you also need to allow that on outbound rule = stateless packet inspection(C.Q)
+===========================================================================
+security Group = stateful 
+Nacl(network access control list) = stateless
+
+security Group is Ec2 instance level
+NACL is subnet(availability zone) level 
+
+------------------------------------------------------------------------------------------------------------------
+25th Session AWS - EC2 Instance Auto-Scaling, Elastic Load Balancer
+
+Network Load Balancer is only Load balancer that provide static IP (C.Q)
+
+------------------------------------------------------------------------------------------------------------------
+26th Session AWS - Types of IP's, GA (Global Accelerator)
+
+http://169.254.169.254/latest/meta-data/ (C.Q)
+
+User-data run only for the first time  when launching ec2 instance(C.Q)
+
+if both eth0 eth1 of ec2 instance used private IP 
+
+------------------------------------------------------------------------------------------------------------------
+28th Session - AWS EC2 Practical's, AWS Console
+
+What is Application SERVER(I.Q) ?
+SERVER Where application is Installed
+
+
+
+------------------------------------------------------------------------------------------------------------------
+29th Session AWS - EC2 Practical's 2 = EC2 Instance Console
+
+Nitro Enclave (TEE Trusted Executable Environment) = 
+
+----------------------------------------------------------------------------------------------------------------
+30th Session AWS - EC2 Practical's 3 = EC2 Instance Console
+
+User Data = To edit user data first stop the ec2 instance and edit user data.
+
+
+You can attach detach IAM Role to the EC2 instance while running.
+
+
+aws is Using XEN Virtualization at the backend.
+
+
+while creating a image we can change root volume properties except size(C.Q)
+while creating a image we can also add additional volume 
+
+if your ec2 instance root volume is not encrypted , while creating image root volume is also not encrypted and vice versa
+
+while creating a image additional volume can be encrypted.
+Deregister AMI = Deleting the AMI 
+COPY AMI provide two things = copying to ami another region, and encrypt the 
+----------------------------------------------------------------------------------------------------------------------------------
+32nd Session AWS - EC2 Instance Load Balancer
+
+ken Thompson =
+ACM = amazon certificate manager
+
+-----------------------------------------------------------------------------------------------------------------------------------
+33rd Session AWS - EC2 Practical 5 Load Balancer
+#!/bin/bash
+
+yum install httpd unzip -y 
+service httpd start
+chkconfig httpd on 
+mkdir /var/www/html
+sudo wget https://www.tooplate.com/zip-templates/2137_barista_cafe.zip 
+sudo unzip 2127*
+sudo mv 2137*/* /var/www/html
+
+
+
+WAF is used to secure the application , WAF stop DDOS
+
+
+==>How to generate SSL Certificate
+	Got to ACM --> Request Certificate --> Select Request a public Certificate --> Next --> Provide Domain Name : Ex:*.boom.com --> click on the 		certificate and create record in R53. (Make sure you purchase the domain first and then create record)
+
+
+-----------------------------------------------------------------------------------------------
+34th Session AWS - EC2 Practical's 6 = Auto Scaling
+
+If you want to have big application like java tomcat on ec2 instances(ASG)
+create a EC2 instance first, Deploy the application and create AMI
+
+it is not possible to edit launch template .
+you can create new version of launch template
+
+draining =  giving response to remaining request == removing the ec2 instance from target group = it Wii complete the in-flight request and removed
+
+-------------------------------------------------------------------------------------
+35th Session AWS - CloudWatch Alarms Events & Logs
+
+Cannery = 
+-------------------------------------------------------------------------------------
+36th Session AWS - CloudWatch Practical's Alarms Events & Lambda AWS Console
+--------------------------------------------------------------------------------------
+47th Session AWS - RDS, RDS Proxy
+
+How many Read Replica can you make in AWS ?
+
+----------------------------------------------------------------------------------------
+52nd Session AWS - Route53 Introduction Tutorial
+
+Route53 is Global Service.
+NS and SOA are automatically created in AWS
+
+
+
+
+
+TARGET = THIS COURSE IS WILL BE COMPLETED  BY Feb-15 2025
+SOME THINGS TO CONSIDERED WHEN LEARNING FROM REYAZ SHAIK
+
+CC   = Crystal Clear
+KISS = KEEP IT SIMPLE 
+
+EXPECTATION FROM THIS COURSE = TO BE AWS SAA (SOLUTION ARCHITECT ASSOCIATE)
+TO GAIN THEROTICAL AND PRACTICAL KNOWLEDEGE ABOUT ALL ARCHITECTURE OF AWS (TO CLEAR AWS INTERVIEW :) )
+
+PRE-REQUISITE = ANYBODY WHO WANT TO LEARN(NON-IT BACKGROUND )
+===========================================================================
+1ST SESSION AWS – INTRODUCTION
+	 INTRODUCTION CLASSES ONLY 
+
+===========================================================================
+2ND SESSION AWS - CLIENT SERVER ARCHITECTURE
+
+===========================================================================
+3RD SESSION AWS - OVERVIEW
+
+===========================================================================
+4TH SESSION AWS - DATA CENTER
+
+===========================================================================
+5TH SESSION AWS - DATA CENTER INFRASTRUCTURE
+
+===========================================================================
+6TH SESSION AWS - MANAGEMENT CONSOLE & GROUP OF SERVICE
+
+===========================================================================
+7TH SESSION AWS - 3T'S ELASTICITY SCALABILITY HIGH AVAILABILITY
+
+===========================================================================
+8TH SESSION AWS - REGIONS AND AVAILABILITY ZONES
+
+===========================================================================
+9TH SESSION AWS - SERVICES EC2, ELASTIC BEANSTALK, LIGHT SAIL, LAMBDA
+
+===========================================================================
+10TH SESSION AWS - STORAGE S3, EBS
+===========================================================================
+11TH SESSION AWS - EFS, DATA SERVICES
+===========================================================================
+12 SESSION AWS - VPC, ROUTE53, CLOUD FRONT
+===========================================================================
+13TH SESSION AWS - IAM, CLOUD WATCH, CLOUD TRAIL
 
 
 ===========================================================================
